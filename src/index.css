@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+  --color-ocean: var(--ocean);
+  --color-ocean-dark: var(--ocean-dark);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-sand: var(--sand);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-mist: var(--mist);
+  --color-card: var(--card);
+  --color-heading: var(--heading);
+}
+
+:root {
+  --sand: #f7f3ec;
+  --ink: #1a2e32;
+  --muted: #5b6e72;
+  --mist: #e7eee8;
+  --card: #ffffff;
+  --heading: #0f4c5c;
+  --ocean: #0f4c5c;
+  --ocean-dark: #0a3440;
+  --gold: #d4a017;
+  --gold-light: #e8c547;
+  color-scheme: light;
+}
+
+.dark {
+  --sand: #0c1416;
+  --ink: #dce8e4;
+  --muted: #9bb4b7;
+  --mist: #1c2d31;
+  --card: #152226;
+  --heading: #d7efe9;
+  --ocean: #0f4c5c;
+  --ocean-dark: #070f11;
+  --gold: #e0b53a;
+  --gold-light: #f0cc5c;
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+  color: var(--ink);
+  background: var(--sand);
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+input[type='date'] {
+  min-width: 0;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 0.65;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--gold) 35%, white);
+  color: var(--ocean-dark);
+}
+
+.skeleton {
+  background: linear-gradient(90deg, var(--mist) 25%, color-mix(in srgb, var(--card) 70%, var(--mist)) 50%, var(--mist) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.2s ease infinite;
+}
+
+@keyframes shimmer {
+  from { background-position: 100% 0; }
+  to { background-position: -100% 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .skeleton {
+    animation: none;
+  }
+}
