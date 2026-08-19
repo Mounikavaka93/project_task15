@@ -4,8 +4,8 @@ import TestimonialCard from './TestimonialCard'
 
 export default function Testimonials() {
   return (
-    <section className="bg-ocean-dark px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-      <div className="mx-auto max-w-7xl">
+    <section className="w-full bg-ocean-dark px-4 py-16 lg:py-24">
+      <div className="w-full">
         <FadeIn>
           <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-gold">Testimonials</p>
           <h2 className="font-display text-3xl font-semibold text-white sm:text-5xl">Travelers, in their own words</h2>

@@ -63,7 +63,7 @@ export default function Navbar({ onAuthClick }) {
         scrolled ? 'border-mist bg-sand shadow-sm' : 'border-transparent bg-sand'
       }`}
     >
-      <nav className="relative z-50 mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
+      <nav className="relative z-50 flex w-full items-center justify-between gap-3 px-4 py-3">
         <NavLink to="/" className="flex min-w-0 items-center gap-2 text-heading" onClick={closeMenu}>
           <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-gold text-lg text-ocean-dark">
             <FiCompass />
@@ -148,7 +148,7 @@ export default function Navbar({ onAuthClick }) {
           open ? 'visible scale-y-100 opacity-100' : 'pointer-events-none invisible scale-y-95 opacity-0'
         }`}
       >
-        <div className="mx-auto max-h-[calc(100svh-4.5rem)] max-w-7xl overflow-y-auto py-2">
+        <div className="max-h-[calc(100svh-4.5rem)] w-full overflow-y-auto py-2">
           {navLinks.map((link) => (
             <NavLink
               key={link.to}

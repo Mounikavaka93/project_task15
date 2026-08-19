@@ -6,8 +6,8 @@ export default function AboutSection() {
   const [expanded, setExpanded] = useState(false)
 
   return (
-    <section id="about" className="bg-card px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-      <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-2 lg:gap-16">
+    <section id="about" className="w-full bg-card px-4 py-16 lg:py-24">
+      <div className="grid w-full items-center gap-10 lg:grid-cols-2 lg:gap-16">
         <FadeIn>
           <div className="relative">
             <img

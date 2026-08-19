@@ -25,7 +25,7 @@ export default function Newsletter() {
   }
 
   return (
-    <section className="relative isolate overflow-hidden px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+    <section className="relative isolate w-full overflow-hidden px-4 py-16 lg:py-24">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{

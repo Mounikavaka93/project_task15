@@ -4,8 +4,8 @@ import { footerDestinations, footerLinks } from '../data/content'
 
 export default function Footer() {
   return (
-    <footer className="bg-ocean-dark px-4 py-14 text-white/80 sm:px-6 lg:px-8">
-      <div className="mx-auto grid max-w-7xl gap-10 sm:grid-cols-2 lg:grid-cols-4">
+    <footer className="w-full bg-ocean-dark px-4 py-14 text-white/80">
+      <div className="grid w-full gap-10 sm:grid-cols-2 lg:grid-cols-4">
         <div className="min-w-0">
           <Link to="/" className="font-display text-2xl font-semibold text-white transition hover:text-gold">
             Wanderly<span className="text-gold">.</span>
@@ -66,7 +66,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="mx-auto mt-12 max-w-7xl border-t border-white/10 pt-6 text-xs text-white/55">
+      <div className="mt-12 w-full border-t border-white/10 pt-6 text-xs text-white/55">
         © 2026 Wanderly Travel Studio. All rights reserved.
       </div>
     </footer>

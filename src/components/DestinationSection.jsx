@@ -65,7 +65,7 @@ export default function DestinationSection() {
   }, [category, has, query, showSaved])
 
   return (
-    <section id="destinations" className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+    <section id="destinations" className="w-full px-4 py-16 lg:py-24">
       <FadeIn className="mb-8 max-w-2xl">
         <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-gold">Popular destinations</p>
         <h2 className="font-display text-3xl font-semibold text-heading sm:text-5xl">

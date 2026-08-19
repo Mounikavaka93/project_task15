@@ -53,7 +53,7 @@ export default function ContactPage() {
         title="Tell us where you want to go"
         copy="Share a few details and we’ll help you shape the trip. Support is available 24/7."
       />
-      <section className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8 lg:py-24">
+      <section className="grid w-full gap-10 px-4 py-16 lg:grid-cols-[0.9fr_1.1fr] lg:py-24">
         <div>
           <h2 className="font-display text-3xl font-semibold text-heading">Get in touch</h2>
           <p className="mt-4 text-sm leading-7 text-muted">

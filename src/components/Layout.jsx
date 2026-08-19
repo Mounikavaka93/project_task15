@@ -10,11 +10,12 @@ export default function Layout({ authOpen, onAuthOpen, onAuthClose }) {
   const { pathname } = useLocation()
 
   useEffect(() => {
-    window.scrollTo(0, 0)
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    window.scrollTo({ top: 0, left: 0, behavior: reduce ? 'auto' : 'smooth' })
   }, [pathname])
 
   return (
-    <div className="min-h-screen bg-sand text-ink">
+    <div className="min-h-screen w-full overflow-x-clip bg-sand text-ink">
       <Navbar onAuthClick={onAuthOpen} />
       <main>
         <Outlet />

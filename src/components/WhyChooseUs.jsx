@@ -12,7 +12,7 @@ const icons = {
 
 export default function WhyChooseUs() {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+    <section className="w-full px-4 py-16 lg:py-24">
       <FadeIn className="mb-10 max-w-2xl">
         <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-gold">Why choose us</p>
         <h2 className="font-display text-3xl font-semibold text-heading sm:text-5xl">Travel that feels looked after</h2>

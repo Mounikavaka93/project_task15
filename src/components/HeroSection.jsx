@@ -22,7 +22,7 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-b from-ocean-dark/80 via-ocean-dark/55 to-sand" />
       </div>
 
-      <div className="relative mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-center px-4 py-16 sm:px-6 sm:py-20 lg:min-h-[92vh] lg:justify-end lg:px-8 lg:pb-16 lg:pt-24">
+      <div className="relative flex min-h-[100svh] w-full flex-col justify-center px-4 py-16 sm:py-20 lg:min-h-[92vh] lg:justify-end lg:pb-16 lg:pt-24">
         <div className="max-w-3xl text-white">
           <p className="mb-4 text-xs font-bold uppercase tracking-[0.28em] text-gold">Premium travel studio</p>
           <h1 className="font-display text-[2rem] font-semibold leading-[1.1] sm:text-5xl lg:text-7xl">

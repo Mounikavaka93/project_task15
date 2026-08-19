@@ -72,8 +72,8 @@ export default function PackageSection() {
             : `${category} packages`
 
   return (
-    <section id="packages" className="bg-mist/70 px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-      <div className="mx-auto max-w-7xl">
+    <section id="packages" className="w-full bg-mist/70 px-4 py-16 lg:py-24">
+      <div className="w-full">
         <FadeIn className="mb-8 max-w-2xl">
           <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-gold">Featured travel packages</p>
           <h2 className="font-display text-3xl font-semibold text-heading sm:text-5xl">{heading}</h2>
